@@ -1,7 +1,7 @@
 <?php
 
 $str = 'Chaine de Caractère';
-$int = 123;
+$int = 1;
 $float = 1.58;
 $bool = true;
 
