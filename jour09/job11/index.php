@@ -10,7 +10,7 @@
             $bdd = mysqli_connect("localhost","root","root","jour08");  // je me connecte a la base de données
 
 
-            $req= mysqli_query($bdd,"SELECT * FROM etudiants");  // Execution de la requette
+            $req= mysqli_query($bdd,"SELECT AVG(capacite) FROM salles");  // Execution de la requette
 
             $res= mysqli_fetch_all($req, MYSQLI_ASSOC);  //on stock le résultat de la requette dans la $res (MYSQLI_ASSOC pour récup le nom des colonnes)
 
@@ -58,13 +58,13 @@
 <style>
     table,
 td {
-    border: 5px solid #333;
+    border: 2px solid #333;
 
     color: black;
 
 }
 
 th {
-    border: 5px solid #333;
+    border: 2px solid #333;
 }
 </style>
