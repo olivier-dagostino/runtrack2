@@ -10,7 +10,7 @@
             $bdd = mysqli_connect("localhost","root","root","jour08");  // je me connecte a la base de données
 
 
-            $req= mysqli_query($bdd,"SELECT salles.nom, etage.nom FROM etage INNER JOIN salles ON etage.id = salles.id_etage");  // Execution de la requette
+            $req= mysqli_query($bdd,"SELECT salles.nom AS nom_salles, etage.nom FROM etage INNER JOIN salles ON etage.id = salles.id_etage");  // Execution de la requette
 
             $res= mysqli_fetch_all($req, MYSQLI_ASSOC);  //on stock le résultat de la requette dans la $res (MYSQLI_ASSOC pour récup le nom des colonnes)
 
